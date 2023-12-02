@@ -1,0 +1,72 @@
+/* @import '~bootstrap/dist/css/bootstrap.min.css';
+body{
+background-color: black;
+color: aliceblue;
+} */
+.card{
+  padding: 15px;
+  background-color: #333;
+}
+.card-body{
+  background-color: black;
+  color: #f1eded;
+}
+.form-group{margin: 10px 0;}
+.form-control{margin: 10px 0;}
+table,tr,td,th{
+  padding: 10px;
+  border: 2px dashed white;
+  text-align: center;
+}
+.navbar-brand{
+  font-size: 30px;
+    background: -webkit-linear-gradient(#42efe3,#44035a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+
+}
+.nav-link{
+  background: -webkit-linear-gradient(#c1c5c3,#525053);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    font-family: monospace;
+    font-weight: 800;
+}
+.dropdown-menu{
+  font-size: 20px;
+  font-family: monospace;
+  background-color: #827e85;
+  transition: 0.3s;
+
+}
+.dropdown-item:hover{
+  background-color: #525053;
+  color: #f1eded;
+}
+.text1
+{
+  background: -webkit-linear-gradient(#c1c5c3,#525053);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+  font-family: monospace;
+  font-weight: 800;
+  margin-top: 60px;
+}
+option{
+  font-family: monospace;
+  font-size: 17px;
+}
+#btn12{
+
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: 500;
+  background: linear-gradient(75deg, rgb(111, 111, 110) 40%, rgb(0, 8, 8));
+}
+#btn12:hover{
+  transition: 0.5s;
+  color: #f1eded;
+  background: linear-gradient(75deg, rgb(18, 12, 2) , rgb(94, 97, 97)60%);}

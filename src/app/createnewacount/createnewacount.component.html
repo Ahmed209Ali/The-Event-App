@@ -1,0 +1,53 @@
+
+<div class="home1">
+<div class="container col-md-6" >
+  <h1 class="text-center text1"> Create Account </h1>
+  <div class="card">
+    <div *ngIf="massage.length >1" class="alert alert-success text-center ">
+      {{massage}}
+    </div>
+  <div class="card-body">
+    <form action="" #formgroub="ngForm">
+    <div class="form-group">
+      <label >Email</label>
+      <input type="email"  required name="email" #email="ngModel" class="form-control" [(ngModel)]="member.email" placeholder="Enter Your Name"  >
+    </div>
+    <div class="form-group"  *ngIf="formgroub.controls?.['email']?.['valid']">
+      <label >Password</label>
+      <input type="password" required name="password" #password="ngModel" class="form-control" [(ngModel)]="member.password" placeholder="Enter Your Password"  >
+    </div>
+    <div class="form-group"  *ngIf="formgroub.controls?.['password']?.['valid']">
+      <label >Phone</label>
+      <input type="tel" required name="phone" #phone="ngModel" class="form-control" [(ngModel)]="member.phone" placeholder="Enter Your Phone"  >
+    </div>
+    <div class="form-group" *ngIf="formgroub.controls?.['phone']?.['valid']">
+
+      <label> Gender</label>
+      <br>
+      <input type="radio" required name="gander" #gander="ngModel" [(ngModel)]="member.gander" value="Male" name="gender"/>Male<br>
+      <input type="radio" required name="gander" #gander="ngModel"  [(ngModel)]="member.gander" value="Female" name="gender"/>Female
+    </div>
+    <div *ngIf="formgroub.valid then validhotl else invalidhotl" class="d-grid">
+
+    </div>
+    <!-- <div class="d-grid">
+      <button (click)="create()" class="btn" id="btn12"> Create Account</button>
+    </div> -->
+    <ng-template #validhotl>
+      <div class="d-grid">
+        <button (click)="create()" id="btn12"  class="btn ">Create Hotel</button>
+      </div>
+
+
+      </ng-template>
+      <ng-template #invalidhotl>
+      <button class="btn btn-info">Please Enter Your Data</button>
+
+
+      </ng-template>
+    </form>
+  </div>
+</div>
+
+</div>
+</div>

@@ -1,0 +1,31 @@
+<app-anavbar></app-anavbar>
+<div class="container col-md-8">
+  <h1 class="text-center text1">Hotels List</h1>
+  <div class="card">
+    <div *ngIf="massage.length >1" class="alert alert-danger text-center ">
+      {{massage}}
+    </div>
+    <div class="card-body">
+<table class="table">
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Discreption</th>
+    <th>Imgehotel</th>
+    <!-- <th>Star</th> -->
+    <th colspan="2">Action</th>
+  </tr>
+  <tr *ngFor="let item of alldata">
+    <th>{{item.id}}</th>
+  <th>{{item.title}}</th>
+  <th>{{item.discreption}}</th>
+  <th>{{item.imgehotel}}</th>
+  <!-- <th>{{item.star}}</th> -->
+  <th><button (click)="remove(item.id)" class="btn btn-danger">Remove</button></th>
+  <th><a routerLink="/admin/AHotel/update/{{item.id}}" class="btn btn-warning">Updata</a></th>
+  </tr>
+</table>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+#btn123{
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  font-size: 17px;
+  font-family: monospace;
+  font-weight: 500;
+}
+#btn123:hover{
+  color: black;
+  background-color: rgb(239, 237, 237);
+  transition: 0.4s;
+  transform: scaleX(1.01,1.01);
+}

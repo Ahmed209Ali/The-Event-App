@@ -1,0 +1,47 @@
+<app-anavbar></app-anavbar>
+<div class="container col-md-6">
+  <h1 class="text-center text1"> Update Hotel </h1>
+  <div class="card">
+    <div *ngIf="massage.length >1" class="alert alert-success text-center ">
+      {{massage}}
+    </div>
+    <div class="card-body">
+<div class="form-group">
+
+  <label>Title</label>
+  <input type="text"  placeholder="Enter Your Title" [(ngModel)]="hotel.title" class="form-control"/>
+</div>
+
+<div class="form-group">
+
+  <label>Discreption</label>
+  <input type="text" [(ngModel)]="hotel.discreption" placeholder="Enter Your Discreption" class="form-control"/>
+</div>
+
+<div class="form-group">
+
+  <label>Imgehotel</label>
+  <input type="url" [(ngModel)]="hotel.imgehotel" placeholder="Enter Your Imgehotel" class="form-control"/>
+</div>
+
+
+<!-- <div class="form-group"> -->
+
+  <!-- <label>Stars</label>
+  <select name=""  [(ngModel)]="hotel.star" class="form-select"  id="">
+
+    <option selected disabled value="">Enter Your numper of Stars</option>
+    <option value="1">1 </option>
+  <option value="2">2 </option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  </select>
+</div> -->
+
+<div class="d-grid">
+  <button (click)="updatastudent()" id="btn12"  class="btn btn-info">Update Hotel</button>
+</div>
+    </div>
+  </div>
+</div>

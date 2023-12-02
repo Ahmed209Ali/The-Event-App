@@ -1,0 +1,11 @@
+.home{
+  width: 100%;
+  height: 100vh;
+  background-color: #4f4c4c;
+  color: rgb(243, 248, 251);
+  font-family: monospace;
+
+}
+.home span{
+  color: #0f0a0a;
+}

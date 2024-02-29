@@ -4,6 +4,7 @@ background-color: black;
 color: aliceblue;
 } */
 .card{
+
   padding: 15px;
   background-color: #333;
 }
@@ -52,8 +53,12 @@ table,tr,td,th{
   -webkit-text-fill-color: transparent;
   font-size: 35px;
   font-family: monospace;
-  font-weight: 800;
+  font-weight: 500;
   margin-top: 60px;
+
+
+
+
 }
 option{
   font-family: monospace;
@@ -70,3 +75,6 @@ option{
   transition: 0.5s;
   color: #f1eded;
   background: linear-gradient(75deg, rgb(18, 12, 2) , rgb(94, 97, 97)60%);}
+
+
+

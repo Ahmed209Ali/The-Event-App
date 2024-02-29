@@ -133,6 +133,34 @@
       "phone": "a",
       "gander": "Male",
       "id": 3
+    },
+    {
+      "email": "ahmed1",
+      "password": "1",
+      "phone": "1",
+      "gander": "Male",
+      "id": 4
+    },
+    {
+      "email": "ahmeddaoud@gmail.com",
+      "password": "212103880",
+      "phone": "294822498",
+      "gander": "Male",
+      "id": 5
+    },
+    {
+      "email": "ahmedali@gmail",
+      "password": "1",
+      "phone": "1",
+      "gander": "Male",
+      "id": 6
+    },
+    {
+      "email": "ahmed12",
+      "password": "12",
+      "phone": "012",
+      "gander": "Male",
+      "id": 7
     }
   ]
 }
